@@ -44,29 +44,7 @@ It is a versatile and widely used technique that provides valuable insights into
 <img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/50155371-38df-412c-9429-7062ca6f0454">
 
  Monte Carlo simulation helps investors assess the risk associated with their investment decisions. It  helps investors make more informed investment decisions by providing a probabilistic framework for evaluating the potential outcomes of their investment strategies.
- ## Regression Models on Stock Prices of AAPL
-_** Libraries Used Sklearn for Regression Models and Matplotlib for Plots**_
- ### Linear Regression
- We know that the stock data is very uncertain and linear regression only works for linear models. This is just to experiment how the data is fluctuating.
- 
- <img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/ef732225-a3cb-43c9-a4d4-4b31a3b16205">
- 
 
- <img width="240" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/c58e2010-a64f-4beb-bb7f-d4f81950413e">
-
- ### Polynomial Regression
- I was hoping that polynomial regression would fit on the data better than Linear. But when we look at the errors it is just as same as linear regression.
-
- <img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/40773bd6-be6e-4ab9-bd83-17d6fc6159f0">
-
-
-
- <img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/43dd1b38-4dd9-4f74-832d-56e1cb2200fc">
-
- ### SVR 
- Support Vector Regression is a type of regression algorithm that extends the concept of Support Vector Machines (SVM) to the domain of regression analysis. While traditional regression methods aim to minimize the error between the predicted and actual values, SVR focuses on minimizing the error while still staying within a certain margin, or epsilon.
-
- <img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/8a9be0c6-1529-4eff-95b3-4dc0e16a3505">
 
  ## Time Series Model
  _Libraries Used statmodels, pandas and numpy_
@@ -102,18 +80,6 @@ _**Adjusted close prices are often used to calculate returns and performance met
 <img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/0e49c498-f593-4003-b3c0-f1f1b0a27f06">
 
 Similarly I plotted for both adjusted and Close Price.(Refer aapl_yfinance.ipynb)
-
-## Regression
-### Linear Regression
-<img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/0af9bac5-17b5-4ee5-a909-66e7c4f3b5d1">
-
-### Polynomial Regression
-<img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/ad8ce967-11f7-43a9-8166-19265850b3fb">
-
-### Support Vector REgression
-<img width="512" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/b8b1033f-dfe0-4e62-9867-cc094de67069">
-
-We may notice that **SVR** perfoms better than Linear Regression and Polynomial Regression.
 
 ### Monte Carlo Simulation 
 **No of simulation in both the cases was 1000**
