@@ -1,5 +1,133 @@
-# SigmaWedge
-**Hackathon**
+# SigmaWedge Hackathon
+## Second Round
+
+_Note: This is a updated readme file for the second round_
+## Steps Done 
+### 1.Defined a MDP for the problem
+### 2.Defined Transition Probability
+### 3.Compute values based on Bellmans Equation 
+### 4.Extracting the Optimal policy for each state
+
+## What is a MDP ?
+MDP also known as Markov Decision Process which is a mathematical structure that is used to model problems where the outcomes are partially random and partially controllable.
+Most of the natural event that happens around the world are stochastic. The stock price data are one such case where the outcomes are stochastic.
+
+So, I implemented **Value Based Iteration** which is a dynamic programming algorithm used to find the optimal policy in a Markov Decision Process (MDP). 
+
+According to the problem statement we know that there are three states **Bear(-1), Bull(+1) and Flat(0)**.
+
+For the MDP the we define states, set of possible actions that we can take, rewards and initial transition probability.
+In the case of defining initial transition probability I took two case where in one case I considered Uniform distribution and in the other case using the previous stock prices I calculated the transition probability.
+
+
+<img width="337" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/d771afef-b60d-4e77-aaef-00e0b5cd8456">
+
+So to explain the **reward dictionary** consider that you are **currently in state bear market** and you **sell** your stock and the **market goes to state bull**. This is **inturn a loss for us** so I have defined **our reward as negative that is -5**. Similarly for each and every case I have given positive rewards when my portfolio value tends to increase and negative in the case where it is reduced and zero when there is no change.
+
+I considered discount factor as 0.8 as we value the future rewards more than the present rewards in the case of stocks.
+
+
+Since Stock prices are stochastic I considered Uniform Distribution for the initial transition probability.
+That is for each and every state action pair as 0.33
+
+
+
+<img width="798" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/14ac4b0a-8466-4339-a3ee-e58190f0ddb6">
+
+Considering the above I initilized **Value function** for all the states to zero intially.
+
+I considered discount factor as 0.8 as we **value the future rewards more than the present rewards** in the case of stocks.
+
+My tolerance value is small as smaller tolerance will lead to more iterations of the algorithm, potentially resulting in a more **accurate approximation** of the optimal values but requiring more computational resources.
+
+
+<img width="215" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/fca50f5c-f4ce-4761-b9ff-3477c4e799fc">
+
+
+SO now comes the iteration 
+For each state s in the state space: we Compute the value of each possible action a in state s using the **Bellmans equation**:
+
+<img width="299" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/7b6e95c7-95d6-401c-a117-c227f1c2fcbe">
+
+Q(s,a) is  is the value of taking action a in state s.
+
+T(s,a,s') is the transition probability from state s to state s' under action a .
+
+R(s,a,s') is the immediate reward received after taking action a and getting transitioned to s'.
+
+γ is the discount factor.
+
+V(s') is the value of the next state.
+
+
+Update the value function V for state s as the maximum value over all possible actions.
+V(s)= max Q(s,a)
+
+Repeat the iteration until the change in the value function ΔV is below a predefined threshold.
+
+Once value iteration converges, extract the optimal policy by selecting the action with the highest value for each state:
+pi(s)=argmax Q(s,a)
+
+The optimal policy for each state was
+
+<img width="282" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/95bf6eee-8702-4bf4-98aa-4f6229a82cfd">
+
+The final value for each state
+
+<img width="457" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/5502ddc2-0ac1-4b2b-8599-b107047d72b0">
+
+
+For each iteration I am printing the all the states and optimal action
+
+<img width="334" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/eeb7c689-327c-46d4-a678-edd3fa664ff8">
+
+
+## Considering the history of appl stock prices for the transition probability
+
+So in the above case I considered uniform distribution that but now Using the data that we pulled from the quantrocket platform .I found the transition probablity.
+Using the matrix we perform the same value based iteration and results varied alot.
+
+<img width="252" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/cda6ea70-294c-4f65-86e4-600b5430b41a">
+
+This is the transition probability matrix based on **the history of aapl stock prices**.
+
+The output for each iteration 
+
+
+<img width="345" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/1ade31ca-a414-40f5-8456-f8acaf6a0ca9">
+
+
+<img width="404" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/57a6976b-9c62-421f-bdad-58c7861a0703">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 _First task_ given was to explore the Quantrocket platform and getfamiliar with the platform. And We were asked to pull the data of Apple Stock for a specified date.
