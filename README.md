@@ -97,34 +97,10 @@ The output for each iteration
 <img width="345" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/1ade31ca-a414-40f5-8456-f8acaf6a0ca9">
 
 
+
+
+
 <img width="404" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/57a6976b-9c62-421f-bdad-58c7861a0703">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
