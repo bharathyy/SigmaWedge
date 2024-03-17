@@ -92,16 +92,12 @@ Using the matrix we perform the same value based iteration and results varied al
 
 This is the transition probability matrix based on **the history of aapl stock prices**.
 
-The output for each iteration 
+<img width="217" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/11717693-611e-46d8-b364-4a878cdbcf67">
 
 
-<img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/1ade31ca-a414-40f5-8456-f8acaf6a0ca9">
+This was the optimal policy that  got when I used the initial transition probability calculated from the stock prices that I pulled.
 
 
-
-
-
-<img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/57a6976b-9c62-421f-bdad-58c7861a0703">
 
 
 ## Q Learning Algorithm
@@ -111,7 +107,7 @@ The output for each iteration
 
 Using the above optimal policy that we got from Value Iteration I changed the dimension of the rewards matrix and  define Q table as zero initially. 
 
-For training I started with a random state and by tuning the hyperparameters of Q learning I updated the Q table. And the final Q table value obtained was.
+For training I started with a random state and taking the action based on epsilon and by Bellamans Equation, I updated the Q table. And the final Q table value obtained was.
 
 
 <img width="236" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/2118efc1-302b-4cf8-ba53-ac6d0b82df3d">
@@ -121,6 +117,11 @@ The Optimal Policy that we got from Q learning was **Similar to the result that 
 <img width="296" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/64055ee3-59ab-4869-83fd-f2536f50bde1">
 
 Using the Q table matrix I tried to test on our data. Due to some error the loop kept on running. I was unable to track where my code went wrong.
+
+
+### References 
+https://towardsdatascience.com/reinforcement-learning-an-easy-introduction-to-value-iteration-e4cfe0731fd5
+
 
 
 
