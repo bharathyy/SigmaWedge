@@ -121,6 +121,8 @@ Using the Q table matrix I tried to test on our data. Due to some error the loop
 
 ### References 
 https://towardsdatascience.com/reinforcement-learning-an-easy-introduction-to-value-iteration-e4cfe0731fd5
+https://medium.com/@ngao7/markov-decision-process-value-iteration-2d161d50a6ff
+https://gibberblot.github.io/rl-notes/single-agent/value-iteration.html
 
 
 
