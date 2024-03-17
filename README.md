@@ -95,13 +95,13 @@ This is the transition probability matrix based on **the history of aapl stock p
 The output for each iteration 
 
 
-<img width="345" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/1ade31ca-a414-40f5-8456-f8acaf6a0ca9">
+<img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/1ade31ca-a414-40f5-8456-f8acaf6a0ca9">
 
 
 
 
 
-<img width="404" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/57a6976b-9c62-421f-bdad-58c7861a0703">
+<img width="350" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/57a6976b-9c62-421f-bdad-58c7861a0703">
 
 
 ## Q Learning Algorithm
@@ -121,6 +121,8 @@ The Optimal Policy that we got from Q learning was **Similar to the result that 
 <img width="296" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/64055ee3-59ab-4869-83fd-f2536f50bde1">
 
 Using the Q table matrix I tried to test on our data. Due to some error the loop kept on running. I was unable to track where my code went wrong.
+
+
 
 
 
