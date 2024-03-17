@@ -7,6 +7,7 @@ _Note: This is a updated readme file for the second round_
 ### 2.Defined Transition Probability
 ### 3.Compute values based on Bellmans Equation 
 ### 4.Extracting the Optimal policy for each state
+### 5.Applying Q Learning Algorithm 
 
 ## What is a MDP ?
 MDP also known as Markov Decision Process which is a mathematical structure that is used to model problems where the outcomes are partially random and partially controllable.
@@ -103,8 +104,28 @@ The output for each iteration
 <img width="404" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/57a6976b-9c62-421f-bdad-58c7861a0703">
 
 
+## Q Learning Algorithm
+
+<img width="286" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/64a82e05-c541-400c-8179-7e6be3087901">
 
 
+Using the above optimal policy that we got from Value Iteration I changed the dimension of the rewards matrix and  define Q table as zero initially. 
+
+For training I started with a random state and by tuning the hyperparameters of Q learning I updated the Q table. And the final Q table value obtained was.
+
+
+<img width="236" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/2118efc1-302b-4cf8-ba53-ac6d0b82df3d">
+
+The Optimal Policy that we got from Q learning was **Similar to the result that we got from Value Iteration**.
+
+<img width="296" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/64055ee3-59ab-4869-83fd-f2536f50bde1">
+
+Using the Q table matrix I tried to test on our data. Due to some error the loop kept on running. I was unable to track where my code went wrong.
+
+
+
+
+### Old Task
   
 _First task_ given was to explore the Quantrocket platform and getfamiliar with the platform. And We were asked to pull the data of Apple Stock for a specified date.
 
