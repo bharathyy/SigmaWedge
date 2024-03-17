@@ -2,6 +2,7 @@
 ## Second Round
 
 _Note: This is a updated readme file for the second round_
+_Refer new_sigmawedge.ipynb_ 
 ## Steps Done 
 ### 1.Defined a MDP for the problem
 ### 2.Defined Transition Probability
@@ -101,6 +102,7 @@ This was the optimal policy that  got when I used the initial transition probabi
 
 
 ## Q Learning Algorithm
+Q-Learning is a model-free reinforcement learning algorithm used to find the optimal action-selection policy for a given finite Markov decision process (MDP). The objective of Q-Learning is to learn a policy, represented by the action-value function Q(s,a), that maximizes the cumulative reward obtained from interacting with an environment.
 
 <img width="286" alt="image" src="https://github.com/bharathyy/SigmaWedge/assets/89925746/64a82e05-c541-400c-8179-7e6be3087901">
 
@@ -123,6 +125,9 @@ Using the Q table matrix I tried to test on our data. Due to some error the loop
 https://towardsdatascience.com/reinforcement-learning-an-easy-introduction-to-value-iteration-e4cfe0731fd5
 https://medium.com/@ngao7/markov-decision-process-value-iteration-2d161d50a6ff
 https://gibberblot.github.io/rl-notes/single-agent/value-iteration.html
+
+
+_**Code Written By Bharathi Shankar J**_
 
 
 
